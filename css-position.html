@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoe E-Shop</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+      }
+      .container::after{
+        content: "";
+      position: absolute;
+      inset: 0;
+      transform: skewy(0deg);
+      background: linear-gradient(to right, #d4e310, #91c3fb);
+      z-index: -1;
+      box-shadow: 2px 4px 5px black ;
+      }
+      .shoe {
+        width: 85%;
+        height: 75%;
+        padding: 2%;
+        margin: auto;
+        margin-top: 7.5%;
+        box-shadow: 3px 3px 10px black ;
+      }
+      .des {
+        max-width: 40%;
+        color: rgb(24, 0, 0);
+      }
+      .des > h1 {
+        font-size: xx-large;
+        margin-bottom: 30px;
+      }
+      .des > p {
+        font-size: large;
+        margin-bottom: 50px;
+        line-height: 20px;
+      }
+      .shoe-1 {
+        position: absolute;
+        right: 0px;
+        top: 10%;
+        width: 700px;
+        height: 500px;
+      }
+      .shoe-1:hover{
+        right: 0px;
+        top: 15px;
+        width: 900px;
+        height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="shoe" style=" background: linear-gradient(to right, #91c3fb, #ff5067, #d4e310);">
+        <div class="des">
+          <h1>Shoe</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet at,
+            blanditiis saepe adipisci molestiae neque quisquam perferendis,
+            repudiandae repellendus odio a repellat minus iste sapiente
+            molestias nulla nam, quas perspiciatis!
+          </p>
+          <p>
+            Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Rem, dolore.
+          </p>
+          <ul>
+            <li>Black - White</li>
+            <li>Blue - White</li>
+            <li>Yellow - Blue</li>
+            <li>Brown - Grey</li>
+          </ul>
+        </div>
+        <img class="shoe-1" src="https://shrutijayewar.github.io/css-position/shoe.png" alt="shoe" />
+      </div>
+    </div>
+  </body>
+</html>
